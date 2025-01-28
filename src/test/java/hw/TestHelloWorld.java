@@ -40,13 +40,13 @@ public class TestHelloWorld {
 
   @Test
   public void getMessageInList() { // this test is broken - fix it!
-    var list = Arrays.asList(fixture);
+    var list = Arrays.of(fixture);
     assertEquals("hello world", list.get(0).getMessage());
   }
 
   @Test
   public void getYearInList() { // this test is broken - fix it!
-    var list = Arrays.asList(fixture);
+    var list = Arrays.of(fixture);
     assertEquals(2025, list.get(0).getYear());
   }
 }
